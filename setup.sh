@@ -58,7 +58,6 @@ sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 apt update
 installCRD
 installDesktopEnvironment
-changeWallpaper
 installGoogleChrome
 installTelegram
 installQbittorrent
@@ -84,7 +83,6 @@ service chrome-remote-desktop start
 
 # Display final information
 echo "..................................................................."
-echo "Brought By The Disala"
 echo "..................................................................."
 echo "Log in PIN : $Pin"
 echo "User Name : $username"
