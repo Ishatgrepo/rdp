@@ -41,13 +41,6 @@ installTelegram() {
   echo "Telegram Installed"
 }
 
-# Function to change wallpaper
-changeWallpaper() {
-  curl -s -L -k -o xfce-verticals.png https://gitlab.com/chamod12/changewallpaper-win10/-/raw/main/CachedImage_1024_768_POS4.jpg
-  mv xfce-verticals.png /usr/share/backgrounds/xfce/
-  echo "Wallpaper Changed"
-}
-
 # Function to install Qbittorrent
 installQbittorrent() {
   sudo apt update
@@ -73,7 +66,6 @@ installQbittorrent
 # Autostart configuration
 if $Autostart ; then
   mkdir -p /home/$username/.config/autostart
-  link="www.youtube.com/@The_Disala"
   echo "[Desktop Entry]
 Type=Application
 Name=Colab
@@ -98,7 +90,6 @@ echo "Log in PIN : $Pin"
 echo "User Name : $username"
 echo "User Pass : $password"
 echo "..................................................................."
-echo "Youtube Video Tutorial - https://youtu.be/xqpCQCJXKxU"
 echo "..................................................................."
 
 # Keep script running
