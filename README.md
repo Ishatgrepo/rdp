@@ -1,4 +1,6 @@
 run
 
 
-sudo git clone https://github.com/Ishatgrepo/rdp/blob/main/run.py && cd rd* && sudo python run.py
+cd
+sudo rm -r rdp
+sudo git clone https://github.com/Ishatgrepo/rdp && cd rd* && sudo python run.py
