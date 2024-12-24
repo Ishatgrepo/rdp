@@ -62,8 +62,6 @@ class CRDSetup:
 
 Type=Application
 Name=Colab
-Exec=sh -c "sensible-browser {}"
-Icon=
 Comment=Open a predefined notebook at session signin.
             with open(f"/home/{user}/.config/autostart/colab.desktop", "w") as f:
                 f.write(colab_autostart)
