@@ -65,7 +65,6 @@ Name=Colab
 Exec=sh -c "sensible-browser {}"
 Icon=
 Comment=Open a predefined notebook at session signin.
-X-GNOME-Autostart-enabled=true""".format(link)
             with open(f"/home/{user}/.config/autostart/colab.desktop", "w") as f:
                 f.write(colab_autostart)
             os.system(f"chmod +x /home/{user}/.config/autostart/colab.desktop")
