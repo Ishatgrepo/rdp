@@ -3,12 +3,12 @@ import subprocess
 import shutil
 CRD_SSH_Code = input("Google CRD SSH Code :")
 username = "admin" #@param {type:"string"}
-password = "root" #@param {type:"string"}
+password = "" #@param {type:"string"}
 os.system(f"useradd -m {username}")
 os.system(f"adduser {username} sudo")
 os.system(f"echo '{username}:{password}' | sudo chpasswd")
 os.system("sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd")
-Pin = 987654 #@param {type: "integer"}
+Pin = 998877 #@param {type: "integer"}
 Autostart = True #@param {type: "boolean"}
 class CRDSetup:
     def __init__(self, user):
@@ -76,9 +76,9 @@ X-GNOME-Autostart-enabled=true""".format(link)
         os.system(f"su - {user} -c '{command}'")
         os.system("service chrome-remote-desktop start")
         print("..........................................................") 
-        print("Log in PIN : 987654") 
+        print("Log in PIN : 998877") 
         print("User Name : admin") 
-        print("User Pass : root") 
+        print("User Pass : ") 
         while True:
             pass
 try:
