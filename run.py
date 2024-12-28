@@ -3,7 +3,7 @@ import subprocess
 import shutil
 CRD_SSH_Code = input("Google CRD SSH Code :")
 username = "admin" #@param {type:"string"}
-password = "" #@param {type:"string"}
+password = "asp1" #@param {type:"string"}
 os.system(f"useradd -m {username}")
 os.system(f"adduser {username} sudo")
 os.system(f"echo '{username}:{password}' | sudo chpasswd")
@@ -78,7 +78,7 @@ X-GNOME-Autostart-enabled=true""".format(link)
         print("..........................................................") 
         print("Log in PIN : 998877") 
         print("User Name : admin") 
-        print("User Pass : ") 
+        print("User Pass : asp1") 
         while True:
             pass
 try:
